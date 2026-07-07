@@ -56,6 +56,34 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
+        },
+        {
+            id: 'cap-5-triangulacion',
+            alignment: 'left',
+            title: 'Triangular los Andes',
+            image: './images/cap5_chimborazo_relacion.jpg',
+            caption: 'El Chimborazo en la <em>Relación histórica</em> (1748). BNE. Dominio público.',
+            description: 'El equipo extiende la triangulación hacia el sur por el callejón interandino, acampando durante semanas a más de 4.000 metros para colocar miras en las cumbres y medir los ángulos entre ellas.',
+            location: {
+                center: [-78.6500, -1.5000],
+                zoom: 8,
+                pitch: 60,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [
+                { layer: 'triangulacion-lineas', opacity: 0.8, duration: 1500 },
+                { layer: 'triangulacion-cumbres', opacity: 1, duration: 1500 },
+                { layer: 'triangulacion-etiquetas', opacity: 1, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'triangulacion-lineas', opacity: 0 },
+                { layer: 'triangulacion-cumbres', opacity: 0 },
+                { layer: 'triangulacion-etiquetas', opacity: 0 }
+            ]
         }
     ]
 };
