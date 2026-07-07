@@ -21,7 +21,7 @@ var config = {
     inset: true, // si inset es true, legend se desactiva
     legend: false,
     theme: 'light',
-    use3dTerrain: false, // ver sección avanzada de la lección: puede activarse
+    use3dTerrain: true, // ver sección avanzada de la lección: puede activarse
                          // con las teselas abiertas de https://mapterhorn.com
                          // (sin clave de API), ajustando 'terrainSource' en index.html
     useCustomLayers: true, // habilita las capas definidas en sources.js
