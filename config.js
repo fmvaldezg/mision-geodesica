@@ -166,7 +166,7 @@ var config = {
             rotateAnimation: true, // rotación lenta: evoca la medición paciente
             spinGlobe: false,
             mapInteractive: false,
-            callback: '',
+            callback: 'desactivarTerreno',
             onChapterEnter: [
                 {
                     layer: 'linea-base',
@@ -223,7 +223,7 @@ var config = {
             rotateAnimation: true,
             spinGlobe: false,
             mapInteractive: false,
-            callback: '',
+            callback: 'activarTerreno',
             onChapterEnter: [
                 {
                     layer: 'triangulacion-lineas',
@@ -279,7 +279,7 @@ var config = {
             rotateAnimation: false,
             spinGlobe: false,
             mapInteractive: false,
-            callback: '',
+            callback: 'desactivarTerreno',
             onChapterEnter: [],
             onChapterExit: []
         },

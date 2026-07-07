@@ -556,6 +556,16 @@
 
         // instantiate the scrollama
         var scroller = scrollama();
+        
+        function activarTerreno() {
+            if (map.getSource('terrainSource')) {
+                map.setTerrain({ 'source': 'terrainSource', 'exaggeration': 1.7 });
+            }
+        }
+
+        function desactivarTerreno() {
+            map.setTerrain(null);
+        }
 
         map.on("load", function () {
             if (config.use3dTerrain) {
@@ -567,8 +577,6 @@
                     'maxzoom': 12,
                     'attribution': '<a href="https://mapterhorn.com/attribution" target="_blank">Mapterhorn</a>'
                 });
-
-                map.setTerrain({ 'source': 'terrainSource', 'exaggeration': 1.7 });
 
                 map.addSource('hillshadeSource', {
                     'type': 'raster-dem',
