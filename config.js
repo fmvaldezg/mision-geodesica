@@ -5,7 +5,7 @@ var config = {
     inset: true,
     legend: false,
     theme: 'light',
-    use3dTerrain: false,
+    use3dTerrain: true,
     useCustomLayers: true,
     bookmarks: false,
     chapterReturn: false,
