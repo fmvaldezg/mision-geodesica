@@ -130,7 +130,7 @@ var config = {
             description: '[COMPLETAR: llegada el 29 de mayo de 1736; la sorpresa europea ante el clima de altura; la recepción hostil de la Real Audiencia y su presidente Dionisio de Alsedo; el encuentro con Pedro Vicente Maldonado, el sabio criollo de Riobamba que se convertirá en colaborador clave.]',
             location: {
                 center: [-78.5249, -0.2299], // centro histórico de Quito
-                zoom: 12.5, // con use3dTerrain: true, usar zoom: 12.5 (ver lección)
+                zoom: 12.5, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
                 pitch: 45,
                 bearing: 0
             },
@@ -158,8 +158,8 @@ var config = {
             description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong>línea base</strong>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con toesas de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.',
             location: {
                 center: [-78.3167, -0.1500], // llanura de Yarouquí (aproximado)
-                zoom: 15, // con use3dTerrain: true, usar zoom: 13.5 (ver lección)
-                pitch: 60, // con use3dTerrain: true, usar pitch: 55
+                zoom: 13.5, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
+                pitch: 55, // idem: puedes restaurar pitch: 60
                 bearing: 15 // orientación aproximada de la línea base
             },
             mapAnimation: 'flyTo',
@@ -215,7 +215,7 @@ var config = {
             description: '[COMPLETAR: la extensión de la triangulación hacia el sur por el callejón interandino; campamentos de semanas a más de 4.000 metros; frío, hambre, miras robadas e instrumentos descalibrados; el experimento de Bouguer sobre la atracción gravitatoria del Chimborazo; las erupciones del Cotopaxi de 1743–1744; y la ruptura entre Bouguer y La Condamine en diciembre de 1741.]',
             location: {
                 center: [-78.79014, -1.41221], // entre Cotopaxi y Chimborazo
-                zoom: 9.5,
+                zoom: 11,
                 pitch: 60,
                 bearing: -42.40
             },
@@ -271,7 +271,7 @@ var config = {
             description: '[COMPLETAR: el extremo sur del arco en la llanura de Tarqui y las mediciones astronómicas asociadas; el asesinato del médico Jean Seniergues en la plaza de Cuenca el 29 de agosto de 1739, durante una corrida de toros y en medio de un motín popular; el proceso judicial que paralizó el trabajo durante meses; las tensiones entre la expedición ilustrada y la sociedad colonial.]',
             location: {
                 center: [-79.0045, -2.9001], // Cuenca, plaza de San Sebastián
-                zoom: 14, // con use3dTerrain: true, usar zoom: 12.5 (ver lección)
+                zoom: 12.5, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
                 pitch: 30,
                 bearing: 0
             },
