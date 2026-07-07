@@ -215,7 +215,7 @@ var config = {
             description: '[COMPLETAR: la extensión de la triangulación hacia el sur por el callejón interandino; campamentos de semanas a más de 4.000 metros; frío, hambre, miras robadas e instrumentos descalibrados; el experimento de Bouguer sobre la atracción gravitatoria del Chimborazo; las erupciones del Cotopaxi de 1743–1744; y la ruptura entre Bouguer y La Condamine en diciembre de 1741.]',
             location: {
                 center: [-78.6500, -1.5000], // entre Cotopaxi y Chimborazo
-                zoom: 8,
+                zoom: 9,
                 pitch: 60,
                 bearing: 0
             },
