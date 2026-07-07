@@ -581,11 +581,10 @@
             if (config.useCustomLayers) {
                 for (i = 0; i < externalData.sources.length; i++) {
                     let currentSource = externalData.sources[i];
-                    let sourceObj = { "type": currentSource.type, "url": currentSource.url };
-                    map.addSource(currentSource.name, sourceObj);
+                    map.addSource(currentSource.name, currentSource.source);
                 }
                 for (i = 0; i < externalData.layers.length; i++) {
-                    map.addLayer(externalData.layers[i], 'your-layer'); // arrange layers beneath this layer in your Studio map
+                    map.addLayer(externalData.layers[i]);
                 }
             }
 
