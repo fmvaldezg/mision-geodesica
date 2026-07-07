@@ -298,7 +298,7 @@ var config = {
             description: '[COMPLETAR: la visita de La Condamine a las ruinas incas de Ingapirca en 1739 y la primera descripción científica europea del sitio; el dibujo de San Agustín de Callo por Ulloa; las contribuciones no geodésicas de la expedición: botánica (la quina y el caucho descritos por Jussieu), lingüística y observación de la sociedad colonial.]',
             location: {
                 center: [-78.8728, -2.5453], // Ingapirca, Cañar
-                zoom: 16,
+                zoom: 14,
                 pitch: 45,
                 bearing: 30
             },
@@ -365,7 +365,7 @@ var config = {
             description: '[COMPLETAR: los resultados confirman la teoría newtoniana; La Condamine publica su <em>Journal du voyage fait par ordre du roi à l\'équateur</em> (1751) y la palabra "équateur" bautizará a la república independiente en 1830; la toesa del Perú como patrón; el mapa de Pedro Vicente Maldonado de 1750; el precedente del metro como unidad universal; la Segunda Misión Geodésica de 1901.]',
             location: {
                 center: [-78.7000, -1.5000], // centro aproximado del arco medido
-                zoom: 7,
+                zoom: 6,
                 pitch: 30,
                 bearing: 0
             },
