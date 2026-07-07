@@ -561,14 +561,32 @@
         // instantiate the scrollama
         var scroller = scrollama();
         
-        function activarTerreno() {
-            if (map.getSource('terrainSource')) {
-                map.setTerrain({ 'source': 'terrainSource', 'exaggeration': 2.3 });
+        var terrenoDeseado = false;
+
+        function aplicarTerreno() {
+            if (terrenoDeseado && map.getSource('terrainSource')) {
+                map.setTerrain({ 'source': 'terrainSource', 'exaggeration': 2.5 });
+            } else {
+                map.setTerrain(null);
             }
         }
 
+        function programarTerreno() {
+            if (map.isMoving()) {
+                map.once('moveend', aplicarTerreno);
+            } else {
+                aplicarTerreno();
+            }
+        }
+
+        function activarTerreno() {
+            terrenoDeseado = true;
+            programarTerreno();
+        }
+
         function desactivarTerreno() {
-            map.setTerrain(null);
+            terrenoDeseado = false;
+            programarTerreno();
         }
 
         map.on("load", function () {
