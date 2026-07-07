@@ -35,6 +35,27 @@ var config = {
             callback: '',
             onChapterEnter: [],
             onChapterExit: []
+        },
+        {
+            id: 'cap-1-la-rochelle',
+            alignment: 'left',
+            hidden: false,
+            title: 'La Rochelle: el embarque',
+            image: './images/cap1_la_condamine_carmontelle.jpg',
+            caption: 'Retrato de Charles-Marie de La Condamine por Carmontelle. Wikimedia Commons, dominio público.',
+            description: 'El 16 de mayo de 1735 zarpa del puerto de La Rochelle el navío <em>Portefaix</em>. A bordo viaja un equipo singular: los académicos Charles-Marie de La Condamine, Pierre Bouguer y Louis Godin; el botánico Joseph de Jussieu; el médico Jean Seniergues; el cartógrafo Jean-Baptiste Verguin; el dibujante Jean-Louis de Morainville; y Hugot, el relojero encargado de mantener vivos los instrumentos. Llevan consigo cuadrantes, relojes de péndulo y toesas de hierro: instrumentos de precisión nunca antes embarcados hacia América.',
+            location: {
+                center: [-1.1517, 46.1591],
+                zoom: 13,
+                pitch: 30,
+                bearing: 270
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            mapInteractive: false,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
         }
     ]
 };
