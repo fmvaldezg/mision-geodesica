@@ -321,6 +321,10 @@
         }
 
         function setLayerOpacity(layer) {
+            if (!map.getLayer(layer.layer)) {
+                console.warn('Capa no encontrada en el mapa: "' + layer.layer + '". Revisa que el id coincida en config.js y sources.js.');
+                return;
+            }
             var paintProps = getLayerPaintType(layer.layer);
             paintProps.forEach(function (prop) {
                 var options = {};
