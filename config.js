@@ -214,10 +214,10 @@ var config = {
             caption: 'El Chimborazo en la <em>Relación histórica</em> (1748). BNE. Dominio público.',
             description: '[COMPLETAR: la extensión de la triangulación hacia el sur por el callejón interandino; campamentos de semanas a más de 4.000 metros; frío, hambre, miras robadas e instrumentos descalibrados; el experimento de Bouguer sobre la atracción gravitatoria del Chimborazo; las erupciones del Cotopaxi de 1743–1744; y la ruptura entre Bouguer y La Condamine en diciembre de 1741.]',
             location: {
-                center: [-78.6500, -1.5000], // entre Cotopaxi y Chimborazo
-                zoom: 9,
+                center: [-78.79014, -1.41221], // entre Cotopaxi y Chimborazo
+                zoom: 11,
                 pitch: 60,
-                bearing: 0
+                bearing: -42.40
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
