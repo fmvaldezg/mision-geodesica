@@ -171,9 +171,31 @@ var externalData = {
                     ]
                 }
             }
+        },
+        // ---------------------------------------------------------------
+        // 5. Mapa de la ciudad de Cartagena por Ulloa en formato raster
+        //    (capítulo 2)
+        // ---------------------------------------------------------------
+        {
+            "name": "plano-cartagena-fuente",
+            "source": {
+                "type": "raster",
+                "tiles": ["https://wmts.oldmapsonline.org/maps/bc0c7067-cbce-41de-9e9d-0af2cc270af3/2025-11-25T20:34:13.343865Z/{z}/{x}/{y}.png?key=4hPBampI2K5Uya4y7CVS"],
+                "tileSize": 256,
+                "attribution": "Plano de Cartagena de Indias, Jorge Juan y Antonio de Ulloa (1748), vía OldMapsOnline"
+            }
         }
     ],
     layers: [
+        // --------------------- Capítulo 2: Cartagena ---------------------
+        {
+            "id": "plano-cartagena",
+            "type": "raster",
+            "source": "plano-cartagena-fuente",
+            "paint": {
+                "raster-opacity": 0
+            }
+        },
         // --------------------- Capítulo 4: Yarouquí ---------------------
         {
             "id": "linea-base",
@@ -228,7 +250,7 @@ var externalData = {
             "filter": ["==", "$type", "LineString"],
             "paint": {
                 "line-color": "#1c4587",
-                "line-width": 1.5,
+                "line-width": 2.5,
                 "line-dasharray": [2, 2],
                 "line-opacity": 0
             }
@@ -287,7 +309,7 @@ var externalData = {
             "layout": { "line-cap": "round" },
             "paint": {
                 "line-color": "#B22222",
-                "line-width": 4,
+                "line-width": 3,
                 "line-opacity": 0
             }
         },
@@ -297,10 +319,10 @@ var externalData = {
             "source": "arco-meridiano-fuente",
             "filter": ["==", "$type", "Point"],
             "paint": {
-                "circle-radius": 6,
+                "circle-radius": 5,
                 "circle-color": "#B22222",
                 "circle-stroke-color": "#ffffff",
-                "circle-stroke-width": 2,
+                "circle-stroke-width": 1,
                 "circle-opacity": 0,
                 "circle-stroke-opacity": 0
             }
@@ -314,7 +336,7 @@ var externalData = {
                 "text-field": ["get", "nombre"],
                 "text-font": ["Noto Sans Regular"],
                 "text-size": 12,
-                "text-offset": [0, 1.2],
+                "text-offset": [0, 0.5],
                 "text-anchor": "top"
             },
             "paint": {

@@ -12,8 +12,8 @@
 
 var config = {
     // Estilo del mapa base: OpenFreeMap no requiere registro ni clave de API.
-    // Otros estilos disponibles: 'bright', 'positron', 'fiord'.
-    style: 'https://tiles.openfreemap.org/styles/liberty',
+    // Otros estilos disponibles: 'liberty', 'positron', 'fiord'.
+    style: 'https://tiles.openfreemap.org/styles/bright',
     showMarkers: false,
     markerColor: '#3FB1CE',
     inset: true, // si inset es true, legend se desactiva
@@ -43,7 +43,7 @@ var config = {
             hidden: false,
             title: '¿Qué forma tiene la Tierra?',
             image: './images/cap0_esferoide_newton.jpg',
-            caption: 'Comparación de los dos modelos del esferoide terrestre, siglo XVIII. Dominio público.',
+            caption: 'Maupertuis achatando el globo terráqueo. Grabado de Jean Daullé (1741) según el retrato de Robert Levrac-Tournières. <a href="https://wellcomecollection.org/works/gq5pnpvj" target="_blank">Wellcome Collection</a>, dominio público.',
             description: 'En 1734, la Academia Real de Ciencias de París enfrentaba una disputa que dividía a la ciencia europea: ¿es la Tierra un esferoide achatado en los polos, como sostenía Isaac Newton, o achatado en el ecuador, como defendía la escuela de Jacques Cassini? La única forma de resolverlo era medir. La Academia decidió enviar dos expediciones simultáneas a los extremos del planeta: una a Laponia, dirigida por Maupertuis (1736–1737), y otra al territorio de la Real Audiencia de Quito, en el actual Ecuador. Esta última se convertiría en la expedición científica más larga realizada hasta entonces: ocho años midiendo un arco del meridiano terrestre entre montañas, páramos y ciudades coloniales.',
             location: {
                 center: [0.0, 0.0], // intersección del ecuador y el meridiano de Greenwich
@@ -70,11 +70,11 @@ var config = {
             hidden: false,
             title: 'La Rochelle: el embarque',
             image: './images/cap1_la_condamine_carmontelle.jpg',
-            caption: 'Retrato de Charles-Marie de La Condamine por Carmontelle. Wikimedia Commons, dominio público.',
-            description: 'El 16 de mayo de 1735 zarpa del puerto de La Rochelle el navío <em>Portefaix</em>. A bordo viaja un equipo singular: los académicos Charles-Marie de La Condamine, Pierre Bouguer y Louis Godin; el botánico Joseph de Jussieu; el médico Jean Seniergues; el cartógrafo Jean-Baptiste Verguin; el dibujante Jean-Louis de Morainville; y Hugot, el relojero encargado de mantener vivos los instrumentos. Llevan consigo cuadrantes, relojes de péndulo y toesas de hierro: instrumentos de precisión nunca antes embarcados hacia América. En Cartagena de Indias se les unirán los jóvenes oficiales españoles Jorge Juan y Antonio de Ulloa, comisionados por Felipe V, oficialmente para colaborar; extraoficialmente, para vigilar.',
+            caption: 'Retrato de Charles-Marie de La Condamine por Carmontelle. <a href="https://commons.wikimedia.org/wiki/File:Carmontelle,_Monsieur_de_la_Condamine_(1760).jpg" target="_blank">Wikimedia Commons</a>, dominio público.',
+            description: 'El 16 de mayo de 1735 zarpa del puerto de La Rochelle el navío <em>Portefaix</em>. A bordo viaja un equipo singular: los académicos <a href="https://es.wikipedia.org/wiki/Charles_Marie_de_La_Condamine#" target="_blank">Charles-Marie de La Condamine</a>, <a href="https://es.wikipedia.org/wiki/Pierre_Bouguer" target="_blank">Pierre Bouguer</a> y <a href="https://es.wikipedia.org/wiki/Louis_Godin" target="_blank">Louis Godin</a>; el botánico <a href="https://es.wikipedia.org/wiki/Joseph_de_Jussieu" target="_blank">Joseph de Jussieu</a>; el médico Jean Seniergues; el cartógrafo Jean-Baptiste Verguin; el dibujante Jean-Louis de Morainville; y Hugot, el relojero encargado de mantener vivos los instrumentos. Llevan consigo cuadrantes, relojes de péndulo y toesas de hierro: instrumentos de precisión nunca antes embarcados hacia América. En Cartagena de Indias se les unirán los jóvenes oficiales españoles <a href="https://es.wikipedia.org/wiki/Jorge_Juan" target="_blank">Jorge Juan</a> y <a href="https://es.wikipedia.org/wiki/Antonio_de_Ulloa" target="_blank">Antonio de Ulloa</a>, comisionados por Felipe V, oficialmente para colaborar; extraoficialmente, para vigilar.',
             location: {
                 center: [-1.1517, 46.1591], // puerto de La Rochelle
-                zoom: 13,
+                zoom: 12,
                 pitch: 30,
                 bearing: 270 // vista hacia el Atlántico: la dirección del viaje
             },
@@ -97,7 +97,7 @@ var config = {
             hidden: false,
             title: 'Cartagena y el camino al Pacífico',
             image: './images/cap2_istmo_panama.jpg',
-            caption: 'Mapa del istmo de Panamá, siglo XVIII. Gallica, BnF. Dominio público.',
+            caption: 'Mapa del istmo de Panamá, siglo XVIII. <a href="https://gallica.bnf.fr/ark:/12148/btv1b8596410d#" target="_blank">Gallica</a>, BnF. Dominio público.',
             description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en Cartagena de Indias, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos jóvenes oficiales de la Armada comisionados por Felipe V. Su presencia es el precio —y la garantía— de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias. Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía germinan las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años.',
             location: {
                 center: [-78.5, 5.0], // vista regional: Cartagena, Panamá y Guayaquil
@@ -108,10 +108,14 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             spinGlobe: false,
-            mapInteractive: false,
+            mapInteractive: true,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                { layer: 'plano-cartagena', opacity: 0.9, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'plano-cartagena', opacity: 0 }
+            ]
         },
         // ---------------------------------------------------------------------
         // CAPÍTULO 3 (esqueleto) — Quito: la llegada (29 de mayo de 1736)
@@ -156,14 +160,14 @@ var config = {
             description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong>línea base</strong>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con toesas de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.',
             location: {
                 center: [-78.3167, -0.1500], // llanura de Yarouquí (aproximado)
-                zoom: 13.5, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
+                zoom: 15, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
                 pitch: 55, // idem: puedes restaurar pitch: 60
                 bearing: 15 // orientación aproximada de la línea base
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true, // rotación lenta: evoca la medición paciente
             spinGlobe: false,
-            mapInteractive: false,
+            mapInteractive: true,
             callback: 'desactivarTerreno',
             onChapterEnter: [
                 {
@@ -213,7 +217,7 @@ var config = {
             description: 'Desde la línea base, el equipo extiende hacia el sur una cadena de triángulos a lo largo del callejón interandino. Para medir los ángulos hay que subir a las cumbres: Bouguer y La Condamine acampan durante semanas a más de 4.000 metros, entre el frío, el hambre, las miras robadas por curiosos y los instrumentos descalibrados por el clima. En el Chimborazo, Bouguer realiza un experimento pionero al medir la desviación gravitatoria que provoca la masa de la montaña, precursor de la geodesia gravimétrica. En 1743 y 1744 el equipo es testigo de erupciones del Cotopaxi, registrando observaciones vulcanológicas tempranas. La ciencia avanza; la concordia no: en diciembre de 1741 Bouguer detecta un error de cálculo de La Condamine, dejan de hablarse y trabajan por separado el resto de la expedición.',
             location: {
                 center: [-78.79014, -1.41221], // entre Cotopaxi y Chimborazo
-                zoom: 11,
+                zoom: 10,
                 pitch: 60,
                 bearing: -42.40
             },
