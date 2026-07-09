@@ -100,10 +100,10 @@ var config = {
             caption: 'Mapa del istmo de Panamá, siglo XVIII. <a href="https://gallica.bnf.fr/ark:/12148/btv1b8596410d#" target="_blank">Gallica</a>, BnF. Dominio público.',
             description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en Cartagena de Indias, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos jóvenes oficiales de la Armada comisionados por Felipe V. Su presencia es el precio —y la garantía— de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias. Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía germinan las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años.',
             location: {
-                center: [-78.5, 5.0], // vista regional: Cartagena, Panamá y Guayaquil
-                zoom: 12,
+                center: [-75.5441, 10.4308], 
+                zoom: 13.5,
                 pitch: 0,
-                bearing: 0
+                bearing: 118
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
