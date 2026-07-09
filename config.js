@@ -128,21 +128,25 @@ var config = {
             hidden: false,
             title: 'Quito, a 2.850 metros',
             image: './images/cap3_vista_quito_ulloa.jpg',
-            caption: 'Vista de Quito en la <em>Relación histórica</em> de Jorge Juan y Antonio de Ulloa (1748). BNE. Dominio público.',
+            caption: 'Plano de la ciudad de San Francisco de Quito, grabado por Juan Bernabé Palomino para la <em>Relación histórica</em> de Juan y Ulloa (1748), lámina XII. <a href="https://bnedigital.bne.es/bd/es/card?id=08f55a6a-8c29-47b2-bb99-1955b2f70b23&page=1" target="_blank">Biblioteca Nacional de España</a>. Dominio público.',
             description: 'El 29 de mayo de 1736 la expedición llega por fin a Quito, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial. La recepción es fría en otro sentido: el presidente de la Real Audiencia, Dionisio de Alsedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: Pedro Vicente Maldonado, joven sabio de Riobamba que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio. Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.',
             location: {
-                center: [-78.5249, -0.2299], // centro histórico de Quito
-                zoom: 12.5, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
-                pitch: 45,
-                bearing: 0
+                center: [-78.5185, -0.2296], // centro histórico de Quito
+                zoom: 13.8, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
+                pitch: 30,
+                bearing: -50
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             spinGlobe: false,
-            mapInteractive: false,
+            mapInteractive: true,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                { layer: 'plano-quito', opacity: 0.9, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'plano-quito', opacity: 0 }
+            ]
         },
         // ---------------------------------------------------------------------
         // CAPÍTULO 4 (modelo) — Yarouquí: la línea base (octubre de 1736)
@@ -155,12 +159,12 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Yarouquí: la línea base',
-            image: './images/cap4_piramides_la_condamine.jpg',
-            caption: 'Las pirámides de la línea base en la <em>Relation abrégée</em> de La Condamine (1745). Gallica, BnF. Dominio público.',
+            image: './images/cap4_piramides_la_condamine.jpeg',
+            caption: 'Planta, perfil y elevación de las dos pirámides. <em>Journal du voyage</em> de La Condamine (1751), lámina V. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k96103k/f58.item#" target="_blank">Gallica</a> Dominio público.',
             description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong>línea base</strong>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con toesas de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.',
             location: {
                 center: [-78.3167, -0.1500], // llanura de Yarouquí (aproximado)
-                zoom: 15, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
+                zoom: 13, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
                 pitch: 55, // idem: puedes restaurar pitch: 60
                 bearing: 15 // orientación aproximada de la línea base
             },

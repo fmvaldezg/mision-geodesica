@@ -187,9 +187,34 @@ var externalData = {
                 "bounds": [-75.560528, 10.408734, -75.528827, 10.439570],
                 "attribution": "Plano de Cartagena, Juan y Ulloa (1748). Georref.: Felipe Valdez vía Allmaps"
             }
+        },
+        // ---------------------------------------------------------------
+        // 6. Mapa de la ciudad de Quito por Ulloa en formato raster
+        //    (capítulo 3)
+        // ---------------------------------------------------------------
+        {
+            "name": "plano-quito-fuente",
+            "source": {
+                "type": "raster",
+                "tiles": ["./map/tiles-quito/{z}/{x}/{y}.png"],
+                "tileSize": 256,
+                "minzoom": 12,
+                "maxzoom": 17,
+                "bounds": [-78.526916, -0.234973, -78.496210, -0.203024],
+                "attribution": "Plano de San Francisco de Quito, Juan y Ulloa (1748). Imagen: BNE. Georref.: Felipe Valdez"
+            }
         }
     ],
     layers: [
+        // --------------------- Capítulo 3: Quito ---------------------
+        {
+            "id": "plano-quito",
+            "type": "raster",
+            "source": "plano-quito-fuente",
+            "paint": {
+                "raster-opacity": 0
+            }
+        },        
         // --------------------- Capítulo 2: Cartagena ---------------------
         {
             "id": "plano-cartagena",
