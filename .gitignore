@@ -1,6 +1,8 @@
 node_modules/
 map/*
 !map/.keep
+!map/tiles-cartagena/
+!map/tiles-cartagena/**
 config.js
 
 # Logs
