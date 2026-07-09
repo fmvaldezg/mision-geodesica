@@ -180,9 +180,12 @@ var externalData = {
             "name": "plano-cartagena-fuente",
             "source": {
                 "type": "raster",
-                "tiles": ["https://wmts.oldmapsonline.org/maps/bc0c7067-cbce-41de-9e9d-0af2cc270af3/2025-11-25T20:34:13.343865Z/{z}/{x}/{y}.png?key=4hPBampI2K5Uya4y7CVS"],
+                "tiles": ["./map/tiles-cartagena/{z}/{x}/{y}.png"],
                 "tileSize": 256,
-                "attribution": "Plano de Cartagena de Indias, Jorge Juan y Antonio de Ulloa (1748), vía OldMapsOnline"
+                "minzoom": 12,
+                "maxzoom": 17,
+                "bounds": [-75.560528, 10.408734, -75.528827, 10.439570],
+                "attribution": "Plano de Cartagena, Juan y Ulloa (1748). Georref.: Felipe Valdez vía Allmaps"
             }
         }
     ],
