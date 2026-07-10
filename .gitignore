@@ -3,6 +3,8 @@ map/*
 !map/.keep
 !map/tiles-cartagena/
 !map/tiles-cartagena/**
+!map/tiles-quito/
+!map/tiles-quito/**
 config.js
 
 # Logs
