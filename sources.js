@@ -40,8 +40,8 @@ var externalData = {
                             "geometry": {
                                 "type": "LineString",
                                 "coordinates": [
-                                    [-78.3520, -0.1290],
-                                    [-78.3030, -0.2210]
+                                    [-78.36494734751827, -0.09918780320726477],
+                                    [-78.3284349641601, -0.20339204333629463] , 
                                 ]
                             }
                         },
@@ -50,7 +50,7 @@ var externalData = {
                             "properties": { "nombre": "Pirámide de Caraburo" },
                             "geometry": {
                                 "type": "Point",
-                                "coordinates": [-78.3520, -0.1290]
+                                "coordinates": [-78.36494734751827, -0.09918780320726477]
                             }
                         },
                         {
@@ -58,7 +58,7 @@ var externalData = {
                             "properties": { "nombre": "Pirámide de Oyambaro" },
                             "geometry": {
                                 "type": "Point",
-                                "coordinates": [-78.3030, -0.2210]
+                                "coordinates": [-78.3284349641601, -0.20339204333629463]
                             }
                         }
                     ]
@@ -76,7 +76,7 @@ var externalData = {
                 "data": {
                     "type": "FeatureCollection",
                     "features": [
-                        { "type": "Feature", "properties": { "nombre": "Pambamarca" }, "geometry": { "type": "Point", "coordinates": [-78.2000, -0.0700] } },
+                        { "type": "Feature", "properties": { "nombre": "Pambamarca" }, "geometry": { "type": "Point", "coordinates": [-78.20880055649536, -0.07982802784916773] } },
                         { "type": "Feature", "properties": { "nombre": "Pichincha" }, "geometry": { "type": "Point", "coordinates": [-78.5980, -0.1710] } },
                         { "type": "Feature", "properties": { "nombre": "El Corazón" }, "geometry": { "type": "Point", "coordinates": [-78.6790, -0.5330] } },
                         { "type": "Feature", "properties": { "nombre": "Cotopaxi" }, "geometry": { "type": "Point", "coordinates": [-78.4360, -0.6800] } },
@@ -89,8 +89,8 @@ var externalData = {
                             "geometry": {
                                 "type": "MultiLineString",
                                 "coordinates": [
-                                    [[-78.2000, -0.0700], [-78.5980, -0.1710]],
-                                    [[-78.2000, -0.0700], [-78.6790, -0.5330]],
+                                    [[-78.20880055649536, -0.07982802784916773], [-78.5980, -0.1710]],
+                                    [[-78.20880055649536, -0.07982802784916773], [-78.6790, -0.5330]],
                                     [[-78.5980, -0.1710], [-78.6790, -0.5330]],
                                     [[-78.5980, -0.1710], [-78.4360, -0.6800]],
                                     [[-78.6790, -0.5330], [-78.4360, -0.6800]],

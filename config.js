@@ -163,10 +163,10 @@ var config = {
             caption: 'Planta, perfil y elevación de las dos pirámides. <em>Journal du voyage</em> de La Condamine (1751), lámina V. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k96103k/f58.item#" target="_blank">Gallica</a> Dominio público.',
             description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong>línea base</strong>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con toesas de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.',
             location: {
-                center: [-78.3167, -0.1500], // llanura de Yarouquí (aproximado)
-                zoom: 13, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
+                center: [-78.3554, -0.1705], // llanura de Yarouquí (aproximado)
+                zoom: 12.31, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
                 pitch: 55, // idem: puedes restaurar pitch: 60
-                bearing: 15 // orientación aproximada de la línea base
+                bearing: 270
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true, // rotación lenta: evoca la medición paciente
@@ -216,8 +216,8 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'Triangular los Andes',
-            image: './images/cap5_chimborazo_relacion.jpg',
-            caption: 'El Chimborazo en la <em>Relación histórica</em> (1748). BNE. Dominio público.',
+            image: './images/cap5_cotopaxi_relacion.jpg',
+            caption: 'El Cotopaxi en la <em>Relación histórica</em> (1748). <a href="https://bnedigital.bne.es/bd/es/viewer?id=eb164900-fd32-4b00-8a82-50bec7c0c705&page=684" target="_blank">BNE</a>. Dominio público.',
             description: 'Desde la línea base, el equipo extiende hacia el sur una cadena de triángulos a lo largo del callejón interandino. Para medir los ángulos hay que subir a las cumbres: Bouguer y La Condamine acampan durante semanas a más de 4.000 metros, entre el frío, el hambre, las miras robadas por curiosos y los instrumentos descalibrados por el clima. En el Chimborazo, Bouguer realiza un experimento pionero al medir la desviación gravitatoria que provoca la masa de la montaña, precursor de la geodesia gravimétrica. En 1743 y 1744 el equipo es testigo de erupciones del Cotopaxi, registrando observaciones vulcanológicas tempranas. La ciencia avanza; la concordia no: en diciembre de 1741 Bouguer detecta un error de cálculo de La Condamine, dejan de hablarse y trabajan por separado el resto de la expedición.',
             location: {
                 center: [-78.79014, -1.41221], // entre Cotopaxi y Chimborazo
@@ -273,7 +273,7 @@ var config = {
             hidden: false,
             title: 'Cuenca: ciencia y conflicto',
             image: './images/cap6_cuenca_colonial.jpg',
-            caption: 'Vista de Cuenca colonial, siglo XVIII. Dominio público.',
+            caption: 'La plaza de Cuenca durante la corrida de toros del 29 de agosto de 1739, grabado de J.-B. Tardieu en la <em>Lettre à Madame ***</em> de La Condamine (1746). <a href="http://catalogue.bnf.fr/ark:/12148/cb30709059d" target="_blank">Gallica, BnF</a>. Dominio público.',
             description: 'El extremo sur del arco se mide cerca de Cuenca, en la llanura de Tarqui, donde se realizan también las observaciones astronómicas que cierran la medición. Pero Cuenca es además el escenario del episodio más oscuro de la expedición: el 29 de agosto de 1739, durante una corrida de toros, el médico Jean Seniergues es atacado mortalmente en la plaza, en medio de un motín popular alimentado por meses de tensiones con la élite local. El proceso judicial que sigue paraliza el trabajo durante meses. El episodio humaniza la empresa: la misión no fue solo una hazaña científica abstracta, sino una experiencia atravesada por los conflictos reales de la sociedad colonial.',
             location: {
                 center: [-79.0045, -2.9001], // Cuenca, plaza de San Sebastián
@@ -328,7 +328,7 @@ var config = {
             hidden: false,
             title: 'El descenso por el Amazonas',
             image: './images/cap8_mapa_amazonas_1745.jpg',
-            caption: 'Mapa del curso del Amazonas por La Condamine (1745). Gallica, BnF. Dominio público.',
+            caption: 'Mapa del curso del Amazonas por La Condamine (1745). <a href="https://gallica.bnf.fr/ark:/12148/btv1b84910834.r=Carte%20du%20cours%20du%20Maragnon%20ou%20de%20la%20grande%20rivi%C3%A8re%20des%20Amazones%2C%20dans%20sa%20partie%20navigable%20depuis%20Jaen%20de%20Bracamoros%20jusqu%27%C3%A0%20son%20embouchure?rk=42918;4" target="_blank">Gallica, BnF</a>. Dominio público.',
             description: 'Concluidas las mediciones en mayo de 1743, La Condamine toma una decisión audaz: en lugar de regresar por el Pacífico, volverá a Europa descendiendo el Amazonas. Es la primera exploración científica del río. Parte de Cuenca hacia Loja y Jaén de Bracamoros, embarca en el Marañón, atraviesa el temible Pongo de Manseriche y navega durante cuatro meses hasta alcanzar el Atlántico el 19 de septiembre de 1743. En el camino realiza observaciones astronómicas y etnográficas, recolecta muestras de caucho y levanta el primer mapa científico del Amazonas, publicado en 1745. El final es accidentado: una canoa zozobra y gran parte de sus muestras se pierde. Mientras tanto, Bouguer ha regresado por la ruta tradicional vía Cartagena y llega a París antes que él, reavivando la disputa pública sobre quién merecía el crédito.',
             location: {
                 center: [-60.0, -3.0], // Amazonas medio, vista panorámica de la cuenca
