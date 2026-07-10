@@ -585,12 +585,21 @@
 
         function activarTerreno() {
             terrenoDeseado = true;
-            aplicarTerreno();
+            // Si el mapa está en pleno flyTo, dejamos que el listener 'moveend'
+            // (registrado una sola vez, más abajo) lo aplique al llegar, para que
+            // el terreno "aparezca" al arribar en vez de ir apareciendo a medio vuelo.
+            // Si ya está detenido, no habrá futuro moveend que lo dispare, así que
+            // se aplica de inmediato.
+            if (!map.isMoving()) {
+                aplicarTerreno();
+            }
         }
 
         function desactivarTerreno() {
             terrenoDeseado = false;
-            aplicarTerreno();
+            if (!map.isMoving()) {
+                aplicarTerreno();
+            }
         }
 
         map.on("load", function () {
@@ -621,7 +630,13 @@
                         'hillshade-exaggeration': 0.55
                     }
                 }, firstSymbolId);
-            };          
+
+                // Escuchamos moveend una sola vez de forma permanente: cada vez que
+                // el mapa se detiene (llegue el flyTo que llegue a completarse, aunque
+                // capítulos anteriores hayan sido interrumpidos por scroll rápido),
+                // sincroniza el terreno con el último estado deseado.
+                map.on('moveend', aplicarTerreno);
+            };
 
             // add custom layers
             if (config.useCustomLayers) {
