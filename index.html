@@ -583,22 +583,14 @@
             }
         }
 
-        function programarTerreno() {
-            if (map.isMoving()) {
-                map.once('moveend', aplicarTerreno);
-            } else {
-                aplicarTerreno();
-            }
-        }
-
         function activarTerreno() {
             terrenoDeseado = true;
-            programarTerreno();
+            aplicarTerreno();
         }
 
         function desactivarTerreno() {
             terrenoDeseado = false;
-            programarTerreno();
+            aplicarTerreno();
         }
 
         map.on("load", function () {
