@@ -333,7 +333,7 @@ var config = {
             caption: 'Grabado de Ingapirca en la <em>Relación histórica</em> (1748). BNE. Dominio público.',
             description: 'No todo fue geodesia. En 1739, desplazándose entre triangulaciones, La Condamine visita las ruinas incas de Ingapirca y produce la primera descripción científica europea del sitio; Ulloa, por su parte, dibuja San Agustín de Callo. Es el nacimiento —involuntario— de la arqueología andina europea. La expedición deja también contribuciones botánicas (Jussieu describe la chinchona, el árbol de la quina del que se extrae la quinina, y el caucho), vocabularios quechuas y agudas observaciones de la sociedad colonial. En Ingapirca, una sección del sitio todavía se llama \'La Condamine\' en señal de reconocimiento.',
             location: {
-                center: [-78.8728, -2.5453], // Ingapirca, Cañar
+                center: [-78.87373698536405, -2.5404460768608796], 
                 zoom: 14,
                 pitch: 45,
                 bearing: 30
@@ -449,6 +449,36 @@ var config = {
                     layer: 'hitos-etiquetas',
                     opacity: 0
                 }
+            ]
+        },
+        // ---------------------------------------------------------------------
+        // CAPÍTULO 9.1 (vacío) — El legado
+        // Capítulo sin texto/imagen: solo sirve como disparador de scroll para
+        // revelar la capa raster "carta-quito" (sources.js) sobre el mapa.
+        // hidden:true oculta la caja de texto (vacía) pero conserva su alto en
+        // el flujo, para que scrollama lo siga usando como disparador.
+        // Ajusta location según el área real cubierta por el tileset.
+        // ---------------------------------------------------------------------
+        {
+            id: 'cap-9-1-carta-quito',
+            alignment: 'left',
+            hidden: true,
+            location: {
+                center: [-78.7000, -1.5000],
+                zoom: 6,
+                pitch: 0,
+                bearing: 0
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: 'desactivarTerreno',
+            onChapterEnter: [
+                { layer: 'carta-quito', opacity: 0.86, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'carta-quito', opacity: 0 }
             ]
         }
     ]

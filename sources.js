@@ -207,6 +207,20 @@ var externalData = {
                 "tiles": ["https://my-map-cogs.s3.us-east-2.amazonaws.com/tiles-meridiana/{z}/{x}/{y}.png"],
                 "tileSize": 256
             }
+        },
+        // ---------------------------------------------------------------
+        // 8. Superposición de la Carta de la Provincia de Quito por Maldonado
+        //    TODO: agregar "bounds": [oeste, sur, este, norte] aquí si se
+        //    conoce el área exacta cubierta por el tileset, para evitar
+        //    solicitudes de tiles fuera de rango.
+        // ---------------------------------------------------------------
+        {
+            "name": "carta-quito-fuente",
+            "source": {
+                "type": "raster",
+                "tiles": ["https://allmaps.xyz/images/4f882e7baa52cad2/{z}/{x}/{y}@2x.png"], //. https://wmts.oldmapsonline.org/maps/41d181ed-50bb-4e5d-b30a-6b0be9b91d42/2026-06-13T16:23:34.193125Z/{z}/{x}/{y}.png?key=4hPBampI2K5Uya4y7CVS
+                "tileSize": 256
+            }
         }
     ],
     layers: [
@@ -397,6 +411,15 @@ var externalData = {
                 "text-halo-color": "#ffffff",
                 "text-halo-width": 1.5,
                 "text-opacity": 0
+            }
+        },
+        // ------------------- Capítulo 9.1: Legado ------------------
+        {
+            "id": "carta-quito",
+            "type": "raster",
+            "source": "carta-quito-fuente",
+            "paint": {
+                "raster-opacity": 0
             }
         }
     ]
