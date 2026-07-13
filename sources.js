@@ -184,8 +184,7 @@ var externalData = {
                 "tileSize": 256,
                 "minzoom": 12,
                 "maxzoom": 17,
-                "bounds": [-75.560528, 10.408734, -75.528827, 10.439570],
-                "attribution": "Plano de Cartagena, Juan y Ulloa (1748). Georref.: Felipe Valdez vía Allmaps"
+                "bounds": [-75.560528, 10.408734, -75.528827, 10.439570]
             }
         },
         // ---------------------------------------------------------------
@@ -200,8 +199,7 @@ var externalData = {
                 "tileSize": 256,
                 "minzoom": 12,
                 "maxzoom": 17,
-                "bounds": [-78.526916, -0.234973, -78.496210, -0.203024],
-                "attribution": "Plano de San Francisco de Quito, Juan y Ulloa (1748). Imagen: BNE. Georref.: Felipe Valdez"
+                "bounds": [-78.526916, -0.234973, -78.496210, -0.203024]
             }
         }
     ],

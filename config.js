@@ -28,7 +28,7 @@ var config = {
     title: 'Medir la Tierra',
     logo: '',
     subtitle: 'La Misión Geodésica Francesa al Ecuador (1736–1743)',
-    byline: 'Por Felipe Valdez',
+    byline: 'Por: Felipe Valdez',
     mobileview: '<div id="rotate-mobile"><em>Para una mejor experiencia en dispositivos móviles, gira tu dispositivo a orientación horizontal.</em><br><br><img src="images/device.png">',
     footer: 'Fuentes: Charles-Marie de La Condamine, <em>Relation abrégée d\'un voyage fait dans l\'intérieur de l\'Amérique méridionale</em> (1745) y <em>Journal du voyage fait par ordre du roi à l\'équateur</em> (1751), Gallica, Biblioteca Nacional de Francia; Jorge Juan y Antonio de Ulloa, <em>Relación histórica del viaje a la América Meridional</em> (1748), Biblioteca Digital Hispánica, BNE. <br> Creado con la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> y datos de <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>.',
     chapters: [
@@ -103,7 +103,7 @@ var config = {
                 center: [-75.5441, 10.4308], 
                 zoom: 13.5,
                 pitch: 0,
-                bearing: 118
+                bearing: 125
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
@@ -111,7 +111,7 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                { layer: 'plano-cartagena', opacity: 0.9, duration: 1500 }
+                { layer: 'plano-cartagena', opacity: 0.77, duration: 1500 }
             ],
             onChapterExit: [
                 { layer: 'plano-cartagena', opacity: 0 }
@@ -132,8 +132,8 @@ var config = {
             description: 'El 29 de mayo de 1736 la expedición llega por fin a Quito, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial. La recepción es fría en otro sentido: el presidente de la Real Audiencia, Dionisio de Alsedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: Pedro Vicente Maldonado, joven sabio de Riobamba que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio. Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.',
             location: {
                 center: [-78.5185, -0.2296], // centro histórico de Quito
-                zoom: 13.8, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
-                pitch: 30,
+                zoom: 13.4, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
+                pitch: 0,
                 bearing: -50
             },
             mapAnimation: 'flyTo',
@@ -142,7 +142,7 @@ var config = {
             mapInteractive: true,
             callback: '',
             onChapterEnter: [
-                { layer: 'plano-quito', opacity: 0.9, duration: 1500 }
+                { layer: 'plano-quito', opacity: 0.75, duration: 1500 }
             ],
             onChapterExit: [
                 { layer: 'plano-quito', opacity: 0 }
