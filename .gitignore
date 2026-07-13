@@ -6,7 +6,8 @@ map/*
 !map/tiles-quito/
 !map/tiles-quito/**
 config.js
-
+!map/rio-amazonas-maranon.geojson
+!map/ruta-cuenca-jaen.geojson
 # Logs
 .DS_Store
 logs

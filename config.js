@@ -98,7 +98,7 @@ var config = {
             title: 'Cartagena y el camino al Pacífico',
             image: './images/cap2_istmo_panama.jpg',
             caption: 'Mapa del istmo de Panamá, siglo XVIII. <a href="https://gallica.bnf.fr/ark:/12148/btv1b8596410d#" target="_blank">Gallica</a>, BnF. Dominio público.',
-            description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en Cartagena de Indias, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos jóvenes oficiales de la Armada comisionados por Felipe V. Su presencia es el precio —y la garantía— de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias. Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía germinan las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años.',
+            description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en Cartagena de Indias, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos jóvenes oficiales de la Armada comisionados por Felipe V. Su presencia es el precio, y la garantía, de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias. Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía surgen las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años.',
             location: {
                 center: [-75.5441, 10.4308], 
                 zoom: 13.5,
@@ -129,7 +129,7 @@ var config = {
             title: 'Quito, a 2.850 metros',
             image: './images/cap3_vista_quito_ulloa.jpg',
             caption: 'Plano de la ciudad de San Francisco de Quito, grabado por Juan Bernabé Palomino para la <em>Relación histórica</em> de Juan y Ulloa (1748), lámina XII. <a href="https://bnedigital.bne.es/bd/es/card?id=08f55a6a-8c29-47b2-bb99-1955b2f70b23&page=1" target="_blank">Biblioteca Nacional de España</a>. Dominio público.',
-            description: 'El 29 de mayo de 1736 la expedición llega por fin a Quito, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial. La recepción es fría en otro sentido: el presidente de la Real Audiencia, Dionisio de Alsedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: Pedro Vicente Maldonado, joven sabio de Riobamba que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio. Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.',
+            description: 'El 29 de mayo de 1736 la expedición llega por fin a <a href="https://es.wikipedia.org/wiki/Quito" target="_blank">Quito</a>, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial. La recepción es fría en otro sentido: el presidente de la <a href="https://es.wikipedia.org/wiki/Real_Audiencia_de_Quito" target="_blank">Real Audiencia</a>, Dionisio de Alcedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: <a href="https://es.wikipedia.org/wiki/Pedro_Vicente_Maldonado" target="_blank">Pedro Vicente Maldonado</a>, joven sabio de Riobamba que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio. Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.',
             location: {
                 center: [-78.5185, -0.2296], // centro histórico de Quito
                 zoom: 13.4, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
@@ -161,7 +161,7 @@ var config = {
             title: 'Yarouquí: la línea base',
             image: './images/cap4_piramides_la_condamine.jpeg',
             caption: 'Planta, perfil y elevación de las dos pirámides. <em>Journal du voyage</em> de La Condamine (1751), lámina V. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k96103k/f58.item#" target="_blank">Gallica</a> Dominio público.',
-            description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong>línea base</strong>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con toesas de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.',
+            description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong style="color: #B22222;">línea base</strong> <span style="display:inline-block; width:22px; height:4px; background-color:#B22222; border-radius:2px; vertical-align:middle;"></span>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con <a href="https://es.wikipedia.org/wiki/Toesa_francesa" target="_blank">toesas</a> de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.<br></br> <img src="./images/cap4_1_vista_de_yaruqui.jpg"><span class="caption" style="display:block; font-size:13px; line-height:1.3em;"><em>Vista de la planicie de Yaruquí por La Condamine 1751. David Rumsey Collection.</em></span>',
             location: {
                 center: [-78.3554, -0.1705], // llanura de Yarouquí (aproximado)
                 zoom: 12.31, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
@@ -263,6 +263,36 @@ var config = {
             ]
         },
         // ---------------------------------------------------------------------
+        // CAPÍTULO 5.1 (vacío) — Superposición de la meridiana
+        // Capítulo sin texto/imagen: solo sirve como disparador de scroll para
+        // revelar la capa raster "meridiana" (sources.js) sobre el mapa.
+        // hidden:true oculta la caja de texto (vacía) pero conserva su alto en
+        // el flujo, para que scrollama lo siga usando como disparador.
+        // Ajusta location según el área real cubierta por el tileset.
+        // ---------------------------------------------------------------------
+        {
+            id: 'cap-5-1-meridiana',
+            alignment: 'left',
+            hidden: true,
+            location: {
+                center: [-78.55329, -1.11027], // mismo centro que cap-4-yarouqui; ajustar si procede
+                zoom: 9,
+                pitch: 0,
+                bearing: 95
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            spinGlobe: false,
+            mapInteractive: true,
+            callback: 'desactivarTerreno',
+            onChapterEnter: [
+                { layer: 'meridiana', opacity: 0.86, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'meridiana', opacity: 0 }
+            ]
+        },
+        // ---------------------------------------------------------------------
         // CAPÍTULO 6 (esqueleto) — Cuenca: el extremo sur y el caso Seniergues
         // Técnica: la description puede sostener narrativa densa y episodios
         // moralmente complejos, no solo descripción geográfica.
@@ -340,18 +370,27 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             spinGlobe: false,
-            mapInteractive: false,
+            mapInteractive: true,
             callback: '',
             onChapterEnter: [
                 {
-                    layer: 'ruta-amazonas',
+                    layer: 'ruta-cuenca-jaen',
+                    opacity: 1,
+                    duration: 2000
+                },
+                {
+                    layer: 'rio-amazonas-maranon',
                     opacity: 1,
                     duration: 2000
                 }
             ],
             onChapterExit: [
                 {
-                    layer: 'ruta-amazonas',
+                    layer: 'ruta-cuenca-jaen',
+                    opacity: 0
+                },
+                {
+                    layer: 'rio-amazonas-maranon',
                     opacity: 0
                 }
             ]

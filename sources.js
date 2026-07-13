@@ -108,36 +108,27 @@ var externalData = {
             }
         },
         // ---------------------------------------------------------------
-        // 3. El descenso de La Condamine por el Amazonas (capítulo 8)
-        //    De Cuenca al Atlántico, mayo–septiembre de 1743.
+        // 3. El viaje de Cuenca al Atlántico (capítulo 8), mayo–sept. 1743.
+        //    Datos OSM reales (no aproximados), curados en map/merged.geojson
+        //    y separados/depurados en dos archivos:
+        //    - ruta-cuenca-jaen.geojson: tramo terrestre Cuenca→Loja→Jaén de
+        //      Bracamoros (relaciones "Carretera Panamericana (ECUADOR)",
+        //      "Longitudinal de la Selva Norte" y "Loja-La Balsa").
+        //    - rio-amazonas-maranon.geojson: descenso fluvial real, río
+        //      Marañón hasta su confluencia y luego el Amazonas.
         // ---------------------------------------------------------------
         {
-            "name": "descenso-amazonas",
+            "name": "ruta-cuenca-jaen-fuente",
             "source": {
                 "type": "geojson",
-                "data": {
-                    "type": "Feature",
-                    "properties": { "nombre": "Descenso del Amazonas (1743)" },
-                    "geometry": {
-                        "type": "LineString",
-                        "coordinates": [
-                            [-79.0045, -2.9001],
-                            [-79.2000, -3.9900],
-                            [-78.8100, -5.7100],
-                            [-77.5500, -4.4700],
-                            [-76.1000, -4.5000],
-                            [-73.5000, -4.4500],
-                            [-73.2500, -3.7500],
-                            [-69.9400, -4.2500],
-                            [-64.7000, -3.4000],
-                            [-60.0200, -3.1000],
-                            [-55.5000, -1.9000],
-                            [-52.5000, -1.7000],
-                            [-48.5000, -1.4500],
-                            [-48.0000, -0.5000]
-                        ]
-                    }
-                }
+                "data": "./map/ruta-cuenca-jaen.geojson"
+            }
+        },
+        {
+            "name": "rio-amazonas-maranon-fuente",
+            "source": {
+                "type": "geojson",
+                "data": "./map/rio-amazonas-maranon.geojson"
             }
         },
         // ---------------------------------------------------------------
@@ -200,6 +191,21 @@ var externalData = {
                 "minzoom": 12,
                 "maxzoom": 17,
                 "bounds": [-78.526916, -0.234973, -78.496210, -0.203024]
+            }
+        },
+        // ---------------------------------------------------------------
+        // 7. Superposición de la meridiana (capítulo 4.1, entre Yarouquí
+        //    y la triangulación). Tiles alojados en S3.
+        //    TODO: agregar "bounds": [oeste, sur, este, norte] aquí si se
+        //    conoce el área exacta cubierta por el tileset, para evitar
+        //    solicitudes de tiles fuera de rango.
+        // ---------------------------------------------------------------
+        {
+            "name": "meridiana-fuente",
+            "source": {
+                "type": "raster",
+                "tiles": ["https://my-map-cogs.s3.us-east-2.amazonaws.com/tiles-meridiana/{z}/{x}/{y}.png"],
+                "tileSize": 256
             }
         }
     ],
@@ -268,6 +274,15 @@ var externalData = {
                 "text-opacity": 0
             }
         },
+        // ------------------- Capítulo 4.1: La meridiana ------------------
+        {
+            "id": "meridiana",
+            "type": "raster",
+            "source": "meridiana-fuente",
+            "paint": {
+                "raster-opacity": 0
+            }
+        },
         // ------------------ Capítulo 5: Triangulación -------------------
         {
             "id": "triangulacion-lineas",
@@ -316,9 +331,21 @@ var externalData = {
         },
         // -------------------- Capítulo 8: Amazonas ----------------------
         {
-            "id": "ruta-amazonas",
+            "id": "ruta-cuenca-jaen",
             "type": "line",
-            "source": "descenso-amazonas",
+            "source": "ruta-cuenca-jaen-fuente",
+            "layout": { "line-cap": "round", "line-join": "round" },
+            "paint": {
+                "line-color": "#8B5A2B",
+                "line-width": 3,
+                "line-dasharray": [1, 2],
+                "line-opacity": 0
+            }
+        },
+        {
+            "id": "rio-amazonas-maranon",
+            "type": "line",
+            "source": "rio-amazonas-maranon-fuente",
             "layout": { "line-cap": "round", "line-join": "round" },
             "paint": {
                 "line-color": "#0b6e4f",
