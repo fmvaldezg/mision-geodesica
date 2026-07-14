@@ -208,8 +208,8 @@ var externalData = {
                 "tileSize": 256,
                 "minzoom": 7,
                 "maxzoom": 13,
-                "bounds": [-79.137665, -3.249650, -77.923352, 0.681390],
-                "attribution": "Carta de la meridiana de Quito (s. XVIII). Georref.: Felipe Valdez"
+                "bounds": [-79.137665, -3.249650, -77.923352, 0.681390]
+            //    "attribution": "Carta de la meridiana de Quito (s. XVIII). Georref.: Felipe Valdez"
             }
         },
         // ---------------------------------------------------------------

@@ -366,7 +366,7 @@ var config = {
             caption: 'Mapa del curso del Amazonas por La Condamine (1745). <a href="https://gallica.bnf.fr/ark:/12148/btv1b84910834.r=Carte%20du%20cours%20du%20Maragnon%20ou%20de%20la%20grande%20rivi%C3%A8re%20des%20Amazones%2C%20dans%20sa%20partie%20navigable%20depuis%20Jaen%20de%20Bracamoros%20jusqu%27%C3%A0%20son%20embouchure?rk=42918;4" target="_blank">Gallica, BnF</a>. Dominio público.',
             description: 'Concluidas las mediciones en mayo de 1743, La Condamine toma una decisión audaz: en lugar de regresar por el Pacífico, volverá a Europa descendiendo el Amazonas. Es la primera exploración científica del río. Parte de Cuenca hacia Loja y Jaén de Bracamoros, embarca en el Marañón, atraviesa el temible Pongo de Manseriche y navega durante cuatro meses hasta alcanzar el Atlántico el 19 de septiembre de 1743. En el camino realiza observaciones astronómicas y etnográficas, recolecta muestras de caucho y levanta el primer mapa científico del Amazonas, publicado en 1745. El final es accidentado: una canoa zozobra y gran parte de sus muestras se pierde. Mientras tanto, Bouguer ha regresado por la ruta tradicional vía Cartagena y llega a París antes que él, reavivando la disputa pública sobre quién merecía el crédito.',
             location: {
-                center: [-60.0, -3.0], // Amazonas medio, vista panorámica de la cuenca
+                center: [-72.38456, -2.86382], // Amazonas medio, vista panorámica de la cuenca
                 zoom: 4.5,
                 pitch: 0,
                 bearing: 90, // vista hacia el este: la salida al Atlántico
