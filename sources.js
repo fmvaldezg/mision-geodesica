@@ -205,7 +205,11 @@ var externalData = {
             "source": {
                 "type": "raster",
                 "tiles": ["https://my-map-cogs.s3.us-east-2.amazonaws.com/tiles-meridiana/{z}/{x}/{y}.png"],
-                "tileSize": 256
+                "tileSize": 256,
+                "minzoom": 7,
+                "maxzoom": 13,
+                "bounds": [-79.137665, -3.249650, -77.923352, 0.681390],
+                "attribution": "Carta de la meridiana de Quito (s. XVIII). Georref.: Felipe Valdez"
             }
         },
         // ---------------------------------------------------------------
@@ -218,8 +222,28 @@ var externalData = {
             "name": "carta-quito-fuente",
             "source": {
                 "type": "raster",
-                "tiles": ["https://allmaps.xyz/images/4f882e7baa52cad2/{z}/{x}/{y}@2x.png"], //. https://wmts.oldmapsonline.org/maps/41d181ed-50bb-4e5d-b30a-6b0be9b91d42/2026-06-13T16:23:34.193125Z/{z}/{x}/{y}.png?key=4hPBampI2K5Uya4y7CVS
-                "tileSize": 256
+                "tiles": ["https://allmaps.xyz/images/4f882e7baa52cad2/{z}/{x}/{y}@2x.png"],
+                "tileSize": 256,
+                "minzoom": 4,
+                "maxzoom": 10,
+                "bounds": [-81.282259, -6.158790, -75.902062, 2.614856]
+            //    "attribution": "Carta de la Provincia de Quito, obra póstuma de Pedro Vicente Maldonado (1750). Georref.: Felipe Valdez vía Allmaps"
+            }
+        },
+        // ---------------------------------------------------------------
+        // 9. Imágenes de satelite de ESRI para mostrar el complejo arqueologico de Ingapirca en
+        // el capítulo 7
+        // ---------------------------------------------------------------
+        {
+            "name": "satelite-ingapirca-fuente",
+            "source": {
+                "type": "raster",
+                "tiles": ["https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"],
+                "tileSize": 256,
+                "minzoom": 13,
+                "maxzoom": 19,
+                "bounds": [-78.885, -2.555, -78.865, -2.535],
+                "attribution": "Imagery: Esri, Maxar, Earthstar Geographics"
             }
         }
     ],
@@ -341,6 +365,15 @@ var externalData = {
                 "text-halo-color": "#ffffff",
                 "text-halo-width": 1.5,
                 "text-opacity": 0
+            }
+        },        
+        // -------------------- Capítulo 7: Ingapirca ----------------------
+        {
+            "id": "satelite-ingapirca",
+            "type": "raster",
+            "source": "satelite-ingapirca-fuente",
+            "paint": {
+                "raster-opacity": 0
             }
         },
         // -------------------- Capítulo 8: Amazonas ----------------------

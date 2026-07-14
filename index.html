@@ -138,6 +138,17 @@
             background-color: #444;
         }
 
+        .control-opacidad {
+            margin-top: 12px;
+            font-size: 11px;
+            color: #666;
+        }
+        .control-opacidad input {
+            width: 100%;
+            accent-color: #1c4587;
+            cursor: pointer;
+        }
+
         /* Portada semitransparente que respeta el tema del config.js */
         #header.light {
             background-color: rgba(250, 250, 250, 0.85);
@@ -411,7 +422,7 @@
 
         if (config.byline) {
             var bylineText = document.createElement('p');
-            bylineText.innerText = config.byline;
+            bylineText.innerHTML = config.byline;
             header.appendChild(bylineText);
         }
 
@@ -604,6 +615,12 @@
             terrenoDeseado = false;
             if (!map.isMoving()) {
                 aplicarTerreno();
+            }
+        }
+
+        function ajustarOpacidad(capa, valor) {
+            if (map.getLayer(capa)) {
+                map.setPaintProperty(capa, 'raster-opacity', parseFloat(valor));
             }
         }
 

@@ -28,9 +28,9 @@ var config = {
     title: 'Medir la Tierra',
     logo: '',
     subtitle: 'La Misión Geodésica Francesa al Ecuador (1736–1743)',
-    byline: 'Por: Felipe Valdez',
+    byline: 'Por: <a href="https://felipevaldez.com/" target="_blank">Felipe Valdez</a>',
     mobileview: '<div id="rotate-mobile"><em>Para una mejor experiencia en dispositivos móviles, gira tu dispositivo a orientación horizontal.</em><br><br><img src="images/device.png">',
-    footer: 'Fuentes: Charles-Marie de La Condamine, <em>Relation abrégée d\'un voyage fait dans l\'intérieur de l\'Amérique méridionale</em> (1745) y <em>Journal du voyage fait par ordre du roi à l\'équateur</em> (1751), Gallica, Biblioteca Nacional de Francia; Jorge Juan y Antonio de Ulloa, <em>Relación histórica del viaje a la América Meridional</em> (1748), Biblioteca Digital Hispánica, BNE. <br> Creado con la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> y datos de <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>.',
+    footer: 'Fuentes: Charles-Marie de La Condamine, <em>Relation abrégée d\'un voyage fait dans l\'intérieur de l\'Amérique méridionale</em> (1745) y <em>Journal du voyage fait par ordre du roi à l\'équateur</em> (1751), Gallica, Biblioteca Nacional de Francia; Jorge Juan y Antonio de Ulloa, <em>Relación histórica del viaje a la América Meridional</em> (1748), Biblioteca Digital Hispánica, BNE. <br> Hernández Asensio, R. (2008). El matemático impaciente. Lima: Institut français d’études andines, Instituto de estudios peruanos, Universidad andina Simón Bolívar. https://doi.org/10.4000/books.ifea.6132 <br> Creado con la plantilla <a href="https://github.com/digidem/maplibre-storymap" target="_blank">MapLibre Storytelling</a> y datos de <a href="https://openfreemap.org" target="_blank">OpenFreeMap</a>.',
     chapters: [
         // ---------------------------------------------------------------------
         // CAPÍTULO 0 (modelo) — Apertura: la disputa por la forma de la Tierra
@@ -44,7 +44,7 @@ var config = {
             title: '¿Qué forma tiene la Tierra?',
             image: './images/cap0_esferoide_newton.jpg',
             caption: 'Maupertuis achatando el globo terráqueo. Grabado de Jean Daullé (1741) según el retrato de Robert Levrac-Tournières. <a href="https://wellcomecollection.org/works/gq5pnpvj" target="_blank">Wellcome Collection</a>, dominio público.',
-            description: 'En 1734, la Academia Real de Ciencias de París enfrentaba una disputa que dividía a la ciencia europea: ¿es la Tierra un esferoide achatado en los polos, como sostenía Isaac Newton, o achatado en el ecuador, como defendía la escuela de Jacques Cassini? La única forma de resolverlo era medir. La Academia decidió enviar dos expediciones simultáneas a los extremos del planeta: una a Laponia, dirigida por Maupertuis (1736–1737), y otra al territorio de la Real Audiencia de Quito, en el actual Ecuador. Esta última se convertiría en la expedición científica más larga realizada hasta entonces: ocho años midiendo un arco del meridiano terrestre entre montañas, páramos y ciudades coloniales.',
+            description: 'En 1734, la Academia Real de Ciencias de París enfrentaba una disputa que dividía a la ciencia europea: ¿es la Tierra un esferoide achatado en los polos, como sostenía Isaac Newton, o achatado en el ecuador, como defendía la escuela de Jacques Cassini? La única forma de resolverlo era medir.<br> La Academia decidió enviar dos expediciones simultáneas a los extremos del planeta: una a Laponia, dirigida por Maupertuis (1736–1737), y <a href="https://es.wikipedia.org/wiki/Misi%C3%B3n_geod%C3%A9sica_francesa" target="blank">otra</a> al territorio de la Real Audiencia de Quito, en el actual Ecuador. Esta última se convertiría en la expedición científica más larga realizada hasta entonces: ocho años midiendo un arco del meridiano terrestre entre montañas, páramos y ciudades coloniales.',
             location: {
                 center: [0.0, 0.0], // intersección del ecuador y el meridiano de Greenwich
                 zoom: 1.6,
@@ -71,7 +71,7 @@ var config = {
             title: 'La Rochelle: el embarque',
             image: './images/cap1_la_condamine_carmontelle.jpg',
             caption: 'Retrato de Charles-Marie de La Condamine por Carmontelle. <a href="https://commons.wikimedia.org/wiki/File:Carmontelle,_Monsieur_de_la_Condamine_(1760).jpg" target="_blank">Wikimedia Commons</a>, dominio público.',
-            description: 'El 16 de mayo de 1735 zarpa del puerto de La Rochelle el navío <em>Portefaix</em>. A bordo viaja un equipo singular: los académicos <a href="https://es.wikipedia.org/wiki/Charles_Marie_de_La_Condamine#" target="_blank">Charles-Marie de La Condamine</a>, <a href="https://es.wikipedia.org/wiki/Pierre_Bouguer" target="_blank">Pierre Bouguer</a> y <a href="https://es.wikipedia.org/wiki/Louis_Godin" target="_blank">Louis Godin</a>; el botánico <a href="https://es.wikipedia.org/wiki/Joseph_de_Jussieu" target="_blank">Joseph de Jussieu</a>; el médico Jean Seniergues; el cartógrafo Jean-Baptiste Verguin; el dibujante Jean-Louis de Morainville; y Hugot, el relojero encargado de mantener vivos los instrumentos. Llevan consigo cuadrantes, relojes de péndulo y toesas de hierro: instrumentos de precisión nunca antes embarcados hacia América. En Cartagena de Indias se les unirán los jóvenes oficiales españoles <a href="https://es.wikipedia.org/wiki/Jorge_Juan" target="_blank">Jorge Juan</a> y <a href="https://es.wikipedia.org/wiki/Antonio_de_Ulloa" target="_blank">Antonio de Ulloa</a>, comisionados por Felipe V, oficialmente para colaborar; extraoficialmente, para vigilar.',
+            description: 'El 16 de mayo de 1735 zarpa del puerto de La Rochelle el navío <em>Portefaix</em>. A bordo viaja un equipo singular: los académicos <a href="https://es.wikipedia.org/wiki/Charles_Marie_de_La_Condamine#" target="_blank">Charles-Marie de La Condamine</a>, <a href="https://es.wikipedia.org/wiki/Pierre_Bouguer" target="_blank">Pierre Bouguer</a> y <a href="https://es.wikipedia.org/wiki/Louis_Godin" target="_blank">Louis Godin</a>; el botánico <a href="https://es.wikipedia.org/wiki/Joseph_de_Jussieu" target="_blank">Joseph de Jussieu</a>; el médico Jean Seniergues; el cartógrafo Jean-Baptiste Verguin; el dibujante Jean-Louis de Morainville; y Hugot, el relojero encargado de mantener los instrumentos. Llevan consigo cuadrantes, relojes de péndulo y toesas de hierro: instrumentos de precisión nunca antes embarcados hacia América. En Cartagena de Indias se les unirán los oficiales españoles <a href="https://es.wikipedia.org/wiki/Jorge_Juan" target="_blank">Jorge Juan</a> y <a href="https://es.wikipedia.org/wiki/Antonio_de_Ulloa" target="_blank">Antonio de Ulloa</a>, comisionados por Felipe V, oficialmente para colaborar; extraoficialmente, para vigilar.',
             location: {
                 center: [-1.1517, 46.1591], // puerto de La Rochelle
                 zoom: 12,
@@ -98,7 +98,7 @@ var config = {
             title: 'Cartagena y el camino al Pacífico',
             image: './images/cap2_istmo_panama.jpg',
             caption: 'Mapa del istmo de Panamá, siglo XVIII. <a href="https://gallica.bnf.fr/ark:/12148/btv1b8596410d#" target="_blank">Gallica</a>, BnF. Dominio público.',
-            description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en Cartagena de Indias, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos jóvenes oficiales de la Armada comisionados por Felipe V. Su presencia es el precio, y la garantía, de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias. Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía surgen las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años.',
+            description: 'En noviembre de 1735 el <em>Portefaix</em> fondea en <a href="https://es.wikipedia.org/wiki/Cartagena_de_Indias" target="_blank">Cartagena de Indias</a>, donde se incorporan Jorge Juan y Antonio de Ulloa, los dos oficiales de la Armada comisionados por Felipe V. Su presencia es el precio, y la garantía, de una concesión diplomática excepcional: España rara vez permite la entrada de científicos extranjeros a sus colonias.<br> Como el canal de Panamá no existe, la ruta al Pacífico es un rompecabezas: navegar hasta Portobelo, cruzar el istmo por tierra, embarcar de nuevo hacia Guayaquil y remontar la sierra por el Camino de Bodegas. En la travesía surgen las primeras tensiones entre La Condamine, Bouguer y Godin, que marcarán la expedición durante años. <div class="control-opacidad">Opacidad del plano de 1748<br><input type="range" min="0" max="1" step="0.05" value="0.77" oninput="ajustarOpacidad(\'plano-cartagena\', this.value)"></div>',
             location: {
                 center: [-75.5441, 10.4308], 
                 zoom: 13.5,
@@ -129,7 +129,7 @@ var config = {
             title: 'Quito, a 2.850 metros',
             image: './images/cap3_vista_quito_ulloa.jpg',
             caption: 'Plano de la ciudad de San Francisco de Quito, grabado por Juan Bernabé Palomino para la <em>Relación histórica</em> de Juan y Ulloa (1748), lámina XII. <a href="https://bnedigital.bne.es/bd/es/card?id=08f55a6a-8c29-47b2-bb99-1955b2f70b23&page=1" target="_blank">Biblioteca Nacional de España</a>. Dominio público.',
-            description: 'El 29 de mayo de 1736 la expedición llega por fin a <a href="https://es.wikipedia.org/wiki/Quito" target="_blank">Quito</a>, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial. La recepción es fría en otro sentido: el presidente de la <a href="https://es.wikipedia.org/wiki/Real_Audiencia_de_Quito" target="_blank">Real Audiencia</a>, Dionisio de Alcedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: <a href="https://es.wikipedia.org/wiki/Pedro_Vicente_Maldonado" target="_blank">Pedro Vicente Maldonado</a>, joven sabio de Riobamba que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio. Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.',
+            description: 'El 29 de mayo de 1736 la expedición llega por fin a <a href="https://es.wikipedia.org/wiki/Quito" target="_blank">Quito</a>, a 2.850 metros de altitud, y los europeos descubren con asombro un clima templado de altura sobre la mismísima línea equinoccial.<br> La recepción es fría en otro sentido: el presidente de la <a href="https://es.wikipedia.org/wiki/Real_Audiencia_de_Quito" target="_blank">Real Audiencia</a>, Dionisio de Alcedo, desconfía de los recién llegados, y la élite local los observa con recelo. Entre los criollos surge, sin embargo, un aliado decisivo: <a href="https://es.wikipedia.org/wiki/Pedro_Vicente_Maldonado" target="_blank">Pedro Vicente Maldonado</a>, que se convertirá en colaborador clave de la misión y, con el tiempo, en cartógrafo notable por mérito propio.<br> Quito, rodeada de volcanes, será la base de operaciones de los años siguientes.<div class="control-opacidad">Opacidad del plano de 1748<br><input type="range" min="0" max="1" step="0.05" value="0.75" oninput="ajustarOpacidad(\'plano-quito\', this.value)"></div>',
             location: {
                 center: [-78.5185, -0.2296], // centro histórico de Quito
                 zoom: 13.4, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
@@ -161,7 +161,7 @@ var config = {
             title: 'Yarouquí: la línea base',
             image: './images/cap4_piramides_la_condamine.jpeg',
             caption: 'Planta, perfil y elevación de las dos pirámides. <em>Journal du voyage</em> de La Condamine (1751), lámina V. <a href="https://gallica.bnf.fr/ark:/12148/bpt6k96103k/f58.item#" target="_blank">Gallica</a> Dominio público.',
-            description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong style="color: #B22222;">línea base</strong> <span style="display:inline-block; width:22px; height:4px; background-color:#B22222; border-radius:2px; vertical-align:middle;"></span>. En la llanura de Yarouquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con <a href="https://es.wikipedia.org/wiki/Toesa_francesa" target="_blank">toesas</a> de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del páramo. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores. Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.<br></br> <img src="./images/cap4_1_vista_de_yaruqui.jpg"><span class="caption" style="display:block; font-size:13px; line-height:1.3em;"><em>Vista de la planicie de Yaruquí por La Condamine 1751. David Rumsey Collection.</em></span>',
+            description: 'Toda la geodesia de la expedición depende de una sola medida hecha a mano: la <strong style="color: #B22222;">línea base</strong> <span style="display:inline-block; width:22px; height:4px; background-color:#B22222; border-radius:2px; vertical-align:middle;"></span>.<br> En la llanura de Yaruquí, al noreste de Quito, el equipo pasa semanas midiendo sobre el terreno una distancia exacta con <a href="https://es.wikipedia.org/wiki/Toesa_francesa" target="_blank">toesas</a> de hierro calibradas, colocadas una tras otra bajo el sol y la lluvia del <a href="https://es.wikipedia.org/wiki/P%C3%A1ramo_(biogeograf%C3%ADa)" target="_blank">páramo</a>. De esa línea se derivarán, por trigonometría, todas las triangulaciones posteriores.<br> Al terminar, levantan dos pirámides de mampostería para marcar los extremos: el primer monumento científico del actual Ecuador. Las pirámides serían destruidas en 1747 por orden de la Corona española, en una disputa diplomática sobre sus inscripciones; es la primera vez que un símbolo científico se convierte en objeto de tensión imperial. Hoy se conservan reconstruidas.<br></br> <img src="./images/cap4_1_vista_de_yaruqui.jpg"><span class="caption" style="display:block; font-size:13px; line-height:1.3em;"><em>Vista de la planicie de Yaruquí por La Condamine 1751. <a href="https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~346862~90114356:Vue-de-la-Base-mesuree-dans-la-plai?JSESSIONID=a7909f67-e146-4739-8d01-bca20eac89c0#" target="_blank">David Rumsey Collection</a>.</em></span>',
             location: {
                 center: [-78.3554, -0.1705], // llanura de Yarouquí (aproximado)
                 zoom: 12.31, // el terreno está desactivado en este capítulo: puedes restaurar zoom: 15 si prefieres el encuadre original
@@ -218,7 +218,7 @@ var config = {
             title: 'Triangular los Andes',
             image: './images/cap5_cotopaxi_relacion.jpg',
             caption: 'El Cotopaxi en la <em>Relación histórica</em> (1748). <a href="https://bnedigital.bne.es/bd/es/viewer?id=eb164900-fd32-4b00-8a82-50bec7c0c705&page=684" target="_blank">BNE</a>. Dominio público.',
-            description: 'Desde la línea base, el equipo extiende hacia el sur una cadena de triángulos a lo largo del callejón interandino. Para medir los ángulos hay que subir a las cumbres: Bouguer y La Condamine acampan durante semanas a más de 4.000 metros, entre el frío, el hambre, las miras robadas por curiosos y los instrumentos descalibrados por el clima. En el Chimborazo, Bouguer realiza un experimento pionero al medir la desviación gravitatoria que provoca la masa de la montaña, precursor de la geodesia gravimétrica. En 1743 y 1744 el equipo es testigo de erupciones del Cotopaxi, registrando observaciones vulcanológicas tempranas. La ciencia avanza; la concordia no: en diciembre de 1741 Bouguer detecta un error de cálculo de La Condamine, dejan de hablarse y trabajan por separado el resto de la expedición.',
+            description: 'Desde la línea base, el equipo extiende hacia el sur una cadena de triángulos a lo largo del callejón interandino. Para medir los ángulos hay que subir a las cumbres: Bouguer y La Condamine acampan durante semanas a más de 4.000 metros, entre el frío, el hambre, las miras robadas por curiosos y los instrumentos descalibrados por el clima.<br> En el <a href="https://es.wikipedia.org/wiki/Volc%C3%A1n_Chimborazo" target="_blank">Chimborazo</a>, Bouguer realiza un experimento pionero al medir la desviación gravitatoria que provoca la masa de la montaña, precursor de la geodesia gravimétrica.<br> En 1743 y 1744 el equipo es testigo de erupciones del <a href="https://es.wikipedia.org/wiki/Volc%C3%A1n_Cotopaxi" target="_blank">Cotopaxi</a>, registrando observaciones vulcanológicas tempranas.<br> La ciencia avanza; la concordia no: en diciembre de 1741 Bouguer detecta un error de cálculo de La Condamine, dejan de hablarse y trabajan por separado el resto de la expedición.',
             location: {
                 center: [-78.79014, -1.41221], // entre Cotopaxi y Chimborazo
                 zoom: 10,
@@ -274,6 +274,7 @@ var config = {
             id: 'cap-5-1-meridiana',
             alignment: 'left',
             hidden: true,
+            description: '<div class="control-opacidad">Opacidad del plano de 1748<br><input type="range" min="0" max="1" step="0.05" value="0.75" oninput="ajustarOpacidad(\'meridiana\', this.value)"></div>',
             location: {
                 center: [-78.55329, -1.11027], // mismo centro que cap-4-yarouqui; ajustar si procede
                 zoom: 9,
@@ -286,7 +287,7 @@ var config = {
             mapInteractive: true,
             callback: 'desactivarTerreno',
             onChapterEnter: [
-                { layer: 'meridiana', opacity: 0.86, duration: 1500 }
+                { layer: 'meridiana', opacity: 0.75, duration: 1500 }
             ],
             onChapterExit: [
                 { layer: 'meridiana', opacity: 0 }
@@ -304,7 +305,7 @@ var config = {
             title: 'Cuenca: ciencia y conflicto',
             image: './images/cap6_cuenca_colonial.jpg',
             caption: 'La plaza de Cuenca durante la corrida de toros del 29 de agosto de 1739, grabado de J.-B. Tardieu en la <em>Lettre à Madame ***</em> de La Condamine (1746). <a href="http://catalogue.bnf.fr/ark:/12148/cb30709059d" target="_blank">Gallica, BnF</a>. Dominio público.',
-            description: 'El extremo sur del arco se mide cerca de Cuenca, en la llanura de Tarqui, donde se realizan también las observaciones astronómicas que cierran la medición. Pero Cuenca es además el escenario del episodio más oscuro de la expedición: el 29 de agosto de 1739, durante una corrida de toros, el médico Jean Seniergues es atacado mortalmente en la plaza, en medio de un motín popular alimentado por meses de tensiones con la élite local. El proceso judicial que sigue paraliza el trabajo durante meses. El episodio humaniza la empresa: la misión no fue solo una hazaña científica abstracta, sino una experiencia atravesada por los conflictos reales de la sociedad colonial.',
+            description: 'El extremo sur del arco se mide cerca de <a href="https://es.wikipedia.org/wiki/Cuenca_(Ecuador)" target="_blank">Cuenca</a>, en la llanura de Tarqui, donde se realizan también las observaciones astronómicas que cierran la medición. Pero Cuenca es además el escenario del episodio más oscuro de la expedición: el 29 de agosto de 1739, durante una corrida de toros, el médico Jean Seniergues es atacado mortalmente en la plaza, en medio de un motín popular alimentado por meses de tensiones con la élite local. El proceso judicial que sigue paraliza el trabajo durante meses. El episodio humaniza la empresa: la misión no fue solo una hazaña científica abstracta, sino una experiencia atravesada por los conflictos reales de la sociedad colonial.',
             location: {
                 center: [-79.0045, -2.9001], // Cuenca, plaza de San Sebastián
                 zoom: 12.5, // el terreno está desactivado en este capítulo: puedes subir a 14 si prefieres el encuadre original
@@ -333,18 +334,22 @@ var config = {
             caption: 'Grabado de Ingapirca en la <em>Relación histórica</em> (1748). BNE. Dominio público.',
             description: 'No todo fue geodesia. En 1739, desplazándose entre triangulaciones, La Condamine visita las ruinas incas de Ingapirca y produce la primera descripción científica europea del sitio; Ulloa, por su parte, dibuja San Agustín de Callo. Es el nacimiento —involuntario— de la arqueología andina europea. La expedición deja también contribuciones botánicas (Jussieu describe la chinchona, el árbol de la quina del que se extrae la quinina, y el caucho), vocabularios quechuas y agudas observaciones de la sociedad colonial. En Ingapirca, una sección del sitio todavía se llama \'La Condamine\' en señal de reconocimiento.',
             location: {
-                center: [-78.87373698536405, -2.5404460768608796], 
-                zoom: 14,
-                pitch: 45,
-                bearing: 30
+                center: [-78.87513, -2.54027], 
+                zoom: 17,
+                pitch: 30,
+                bearing: 0
             },
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             spinGlobe: false,
             mapInteractive: false,
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+            onChapterEnter: [
+                { layer: 'satelite-ingapirca', opacity: 0.9, duration: 1500 }
+            ],
+            onChapterExit: [
+                { layer: 'satelite-ingapirca', opacity: 0 }
+            ]
         },
         // ---------------------------------------------------------------------
         // CAPÍTULO 8 (modelo) — El descenso por el Amazonas (mayo–sept. 1743)
@@ -365,7 +370,7 @@ var config = {
                 zoom: 4.5,
                 pitch: 0,
                 bearing: 90, // vista hacia el este: la salida al Atlántico
-                speed: 0.5 // ralentiza el flyTo para dramatizar la distancia
+                speed: 0.6 // ralentiza el flyTo para dramatizar la distancia
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
