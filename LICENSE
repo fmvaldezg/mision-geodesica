@@ -1,3 +1,32 @@
+Copyright (c) 2026 Felipe Valdez
+
+This repository contains two kinds of material, released under two different
+licenses.
+
+
+CONTENT
+-------------------------------------------------------------------------------
+
+The narrative text, historical research, images, map styling, and data layers
+authored by Felipe Valdez for "Misión Geodésica Francesa al Ecuador (1736–1743)"
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+A copy of the license is available at:
+https://creativecommons.org/licenses/by/4.0/
+
+
+CODE
+-------------------------------------------------------------------------------
+
+The storytelling template and all software in this repository are licensed under
+the BSD 3-Clause License. The original notices are reproduced in full below and
+are unmodified by the terms above.
+
+
+===============================================================================
+
+
 Copyright (c) 2023, MapLibre contributors
 
 All rights reserved.
