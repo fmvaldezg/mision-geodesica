@@ -2,7 +2,7 @@
 
 **Un mapa narrativo (*story map*) construido con software libre.**
 
-[Ver la historia en línea](ENLACE-AL-SITIO-DESPLEGADO) · [Lección que acompaña, en *The Programming Historian en español*](ENLACE-A-LA-LECCION) · DOI: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+[Ver la historia en línea](https://felipevaldez.com/mision-geodesica/)· DOI: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
 
 ---
 
