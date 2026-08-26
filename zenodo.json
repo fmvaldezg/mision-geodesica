@@ -54,6 +54,10 @@
     {
       "identifier": "https://github.com/mapbox/storytelling",
       "relation": "isDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/digidem/maplibre-storymap",
+      "relation": "isDerivedFrom"
     }
   ]
 }
