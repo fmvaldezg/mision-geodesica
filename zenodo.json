@@ -7,7 +7,7 @@
     {
       "name": "Valdez, Felipe",
       "affiliation": "Temple University Libraries",
-      "orcid": "0000-0000-0000-0000"
+      "orcid": "0000-0001-6999-5657"
     }
   ],
   "description": "<p>Story map interactivo que narra la Misión Geodésica Francesa enviada a la Audiencia de Quito entre 1736 y 1743 para medir un arco de meridiano en la línea equinoccial y determinar la forma de la Tierra.</p><p>La pieza combina cartografía histórica y narrativa de desplazamiento (<em>scrollytelling</em>), y recorre el itinerario de la expedición a través del actual territorio del Ecuador.</p><p>Fue creada como ejemplo para una lección de Programming Historian en español, a partir de la plantilla de narración cartográfica de Mapbox adaptada a MapLibre GL JS por digidem. Este registro archiva el código fuente, los datos y los recursos del story map; la versión en línea puede consultarse en https://felipevaldez.com/mision-geodesica/</p>",
