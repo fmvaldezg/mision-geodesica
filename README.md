@@ -1,8 +1,10 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22113891.svg)](https://doi.org/10.5281/zenodo.22113891)
 # Medir la Tierra: la Misión Geodésica Francesa al Ecuador (1736–1743)
 
 **Un mapa narrativo (*story map*) construido con software libre.**
 
-[Ver la historia en línea](https://felipevaldez.com/mision-geodesica/)· DOI: [10.5281/zenodo.XXXXXXX](https://doi.org/10.5281/zenodo.XXXXXXX)
+[Ver la historia en línea](https://felipevaldez.com/mision-geodesica/) · DOI: [10.5281/zenodo.22113891](https://doi.org/10.5281/zenodo.22113891) · 
+
 
 ---
 
