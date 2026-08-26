@@ -30,5 +30,5 @@ version: 1.0.0
 date-released: "2026-08-25"
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.XXXXXXX"
+    value: "10.5281/zenodo.22113891"
     description: "Concept DOI — todas las versiones"
