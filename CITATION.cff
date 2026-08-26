@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "Si utiliza este story map, por favor cítelo de la siguiente manera."
+title: "Misión Geodésica Francesa al Ecuador (1736–1743): story map interactivo"
+abstract: >-
+  Story map interactivo que narra la Misión Geodésica Francesa enviada a la
+  Audiencia de Quito entre 1736 y 1743 para medir un arco de meridiano en la
+  línea equinoccial y determinar la forma de la Tierra. Combina cartografía
+  histórica y narrativa de desplazamiento (scrollytelling), y fue creado como
+  ejemplo para una lección de Programming Historian en español a partir de la
+  plantilla de Mapbox adaptada a MapLibre GL JS por digidem.
+type: software
+authors:
+  - family-names: Valdez
+    given-names: Felipe
+    affiliation: "Temple University Libraries"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+keywords:
+  - Misión Geodésica Francesa
+  - Audiencia de Quito
+  - Ecuador
+  - historia de la ciencia
+  - cartografía histórica
+  - story map
+  - MapLibre GL JS
+  - humanidades digitales
+license: MIT
+repository-code: "https://github.com/fmvaldezg/mision-geodesica"
+url: "https://felipevaldez.com/mision-geodesica/"
+version: 1.0.0
+date-released: "2026-08-25"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.XXXXXXX"
+    description: "Concept DOI — todas las versiones"
