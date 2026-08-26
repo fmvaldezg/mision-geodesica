@@ -1,0 +1,59 @@
+{
+  "upload_type": "other",
+  "title": "Misión Geodésica Francesa al Ecuador (1736–1743): story map interactivo",
+  "language": "spa",
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Valdez, Felipe",
+      "affiliation": "Temple University Libraries",
+      "orcid": "0000-0000-0000-0000"
+    }
+  ],
+  "description": "<p>Story map interactivo que narra la Misión Geodésica Francesa enviada a la Audiencia de Quito entre 1736 y 1743 para medir un arco de meridiano en la línea equinoccial y determinar la forma de la Tierra.</p><p>La pieza combina cartografía histórica y narrativa de desplazamiento (<em>scrollytelling</em>), y recorre el itinerario de la expedición a través del actual territorio del Ecuador.</p><p>Fue creada como ejemplo para una lección de Programming Historian en español, a partir de la plantilla de narración cartográfica de Mapbox adaptada a MapLibre GL JS por digidem. Este registro archiva el código fuente, los datos y los recursos del story map; la versión en línea puede consultarse en https://felipevaldez.com/mision-geodesica/</p>",
+  "keywords": [
+    "Misión Geodésica Francesa",
+    "Audiencia de Quito",
+    "Ecuador",
+    "historia de la ciencia",
+    "siglo XVIII",
+    "cartografía histórica",
+    "arco de meridiano",
+    "story map",
+    "scrollytelling",
+    "MapLibre GL JS",
+    "humanidades digitales"
+  ],
+  "locations": [
+    {
+      "place": "Quito, Ecuador",
+      "lat": -0.1807,
+      "lon": -78.4678,
+      "description": "Base de operaciones de la misión geodésica."
+    },
+    {
+      "place": "Cuenca, Ecuador",
+      "lat": -2.9006,
+      "lon": -79.0045,
+      "description": "Extremo sur de la cadena de triangulación."
+    }
+  ],
+  "dates": [
+    {
+      "start": "1736-01-01",
+      "end": "1743-12-31",
+      "type": "Collected",
+      "description": "Período histórico narrado en el story map."
+    }
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://felipevaldez.com/mision-geodesica/",
+      "relation": "isVariantFormOf"
+    },
+    {
+      "identifier": "https://github.com/mapbox/storytelling",
+      "relation": "isDerivedFrom"
+    }
+  ]
+}
