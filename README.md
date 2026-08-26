@@ -70,7 +70,7 @@ El código se distribuye bajo los términos de la licencia de la plantilla origi
 
 ## Cómo citar
 
-> Valdez, Felipe. *Medir la Tierra: la Misión Geodésica Francesa al Ecuador (1736–1743)*. Mapa narrativo. AÑO. DOI: 10.5281/zenodo.XXXXXXX
+> Valdez, Felipe. *Medir la Tierra: la Misión Geodésica Francesa al Ecuador (1736–1743)*. Mapa narrativo. 2026. DOI: 10.5281/zenodo.22113891
 
 ---
 
